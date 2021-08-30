@@ -12,3 +12,161 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
 }
+
+/* ---- Top-Right=Menu (burger Menu)
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 0;
+  padding: 1.5rem;
+}
+.img-container{
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 0;
+  padding: 0 1.5rem;
+}
+.nav-brand {
+  cursor: pointer;
+  z-index: 999;
+  top: 0;
+  left: 1rem;
+  font-size: xxx-large;
+  height: 2rem;
+  width: 7rem;
+  position: fixed;
+  padding: 1rem;
+  background: transparent;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.line1 {
+  width: 50px;
+  height: 3px;
+  margin: 5px 1rem;
+  animation: flow 10s ease-in-out infinite;
+  -webkit-animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(
+          135deg,
+          rgb(0, 245, 189) 0%,
+          rgb(62, 54, 255) 100%
+  );
+  background-size: 200%;
+}
+.line2 {
+  width: 50px;
+  height: 3px;
+  margin: 5px 1rem;
+  animation: flow 10s ease-in-out infinite;
+  -webkit-animation:flow 10s ease-in-out infinite;
+  background: linear-gradient(
+          135deg,
+          rgb(0, 245, 189) 0%,
+          rgb(62, 54, 255) 100%
+  );
+  background-size: 200%;
+}
+.line3 {
+  width: 50px;
+  height: 3px;
+  margin: 5px 1rem;
+  animation: flow 10s ease-in-out infinite;
+  -webkit-animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(
+          135deg,
+          rgb(0, 245, 189) 0%,
+          rgb(62, 54, 255) 100%
+  );
+  background-size: 200%;
+}
+.burger-menu-icon {
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: transparent;
+  padding: 1.2rem;
+  border-radius: 0 0 0 40%;
+}
+.profile-pic {
+  height: 9rem;
+  width: auto;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  margin: 1.5rem auto;
+  background: transparent;
+}
+.caption {
+  display: block;
+}
+
+.nav-list {
+  width: 24rem;
+  height: 100vh;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: start;
+  z-index: 998;
+  transition: all 650ms ease-in-out;
+  overflow-y: auto;
+}
+.nav-list.active {
+  right: 0;
+}
+.nav-item {
+  margin: 1.2rem 0;
+}
+.nav-link {
+  opacity: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #cecece;
+  letter-spacing: 2px;
+}
+.nav-link:hover {
+  color: rgb(0, 245, 189);
+}
+.nav-link i{
+  font-size: 2.4rem;
+}
+
+.toggle {
+  background: none;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px) scaleX(1);
+  margin: 5px 0;
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px) scaleX(1);
+  margin-left: 0;
+}
+@keyframes navLinkAnimate {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+----*/
