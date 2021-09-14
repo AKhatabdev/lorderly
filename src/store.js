@@ -163,11 +163,10 @@ const store = createStore(reducers, persistedState);
 store.subscribe(
   throttle(() => {
     saveState(store.getState());
-
   }, 1000)
 );
 
-
+//No data => create data from (SEED)
 console.log(store.getState());
 if (!store.getState().board.lists.length) {
   console.log("SEED");
