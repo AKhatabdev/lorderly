@@ -2,7 +2,6 @@ import "../styles/App.css";
 
 import{BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Container} from "react-bootstrap";
-import LandingPage from "./LandingPage";
 import Signup from "./Signup";
 import Login from "./Login";
 import UserBoard from "./UserBoard";

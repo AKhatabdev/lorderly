@@ -1,9 +1,65 @@
-.avatar img{
+.avatar {
+    align-items: center;
+    right: 100px;
+    user-select: none;
+}
+
+.avatar:hover img {
+    opacity: 0.2;
+    transition: opacity .4s, visibility .4s;
+}
+
+.avatar:hover h3 {
+    opacity: 0;
+}
+
+.avatar img {
     top: 50px;
-    right: 50px;
+    right: 180px;
     position: absolute;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     background-color: rgba(0, 0, 0, 0.35);
     border-radius: 50%;
 }
+
+.avatar h3 {
+    margin: 0;
+    top: 160px;
+    right: 210px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    color: #f5f6f7;
+    text-align: center;
+    opacity: 1;
+}
+
+.avatar h4 {
+    margin: 0;
+    top: 160px;
+    right: 100px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100px;
+    color: #b23b3b;
+    text-align: center;
+    opacity: 0;
+}
+
+.logout i {
+    margin: 0;
+    top: 60px;
+    right: 100px;
+    position: absolute;
+    opacity: 1;
+    color: whitesmoke;
+    font-size: xxx-large;
+}
+
+.logout:hover i {
+    color: #b23b3b;
+}
+
