@@ -3,3 +3,7 @@
     border-radius: 5px;
     padding: 2px 2px;
 }
+
+.Add-List-Button{
+    user-select: none;
+}

@@ -67,7 +67,7 @@ class List extends Component {
 
         return (
             <Draggable draggableId={list._id} index={index}>
-                {(provided, snapshot) => (
+                {(provided) => (
                     <div
                         ref={provided.innerRef}
                         {...provided.draggableProps}
@@ -113,7 +113,6 @@ class List extends Component {
                                     ) : (
                                         <div className="Toggle-Add-Card" onClick={this.toggleAddingCard}>
                                             <ion-icon name="add"/>
-                                            Add a card
                                         </div>
                                     )}
                                 </div>

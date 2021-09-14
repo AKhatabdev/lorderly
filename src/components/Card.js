@@ -38,7 +38,7 @@ class Card extends Component {
     deleteCard = async () => {
         const {listId, card, dispatch} = this.props;
 
-        if (window.confirm("Are you sure to delete this card?")) {
+        if (window.confirm("Delete this card?")) {
             dispatch({
                 type: "DELETE_CARD",
                 payload: {cardId: card._id, listId}
@@ -53,7 +53,7 @@ class Card extends Component {
         if (!editing) {
             return (
                 <Draggable draggableId={card._id} index={index}>
-                    {(provided, snapshot) => (
+                    {(provided) => (
                         <div
                             ref={provided.innerRef}
                             {...provided.draggableProps}

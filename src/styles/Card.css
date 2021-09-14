@@ -1,13 +1,14 @@
 .Card {
     position: relative;
     cursor: pointer;
-    background: white;
+    background: #f9f9f9;
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
     font-size: 15px;
+    font-weight: normal;
     overflow-wrap: break-word;
     min-height: 18px;
 }
@@ -34,7 +35,7 @@
     justify-content: center;
     border-radius: 5px;
     margin: 1px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(101, 101, 101, 0.95);
     background: #f5f6f7;
     opacity: 0.9;
 }
