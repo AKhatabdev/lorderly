@@ -1,7 +1,9 @@
+import "../styles/Login.css";
+
 import React, {useRef, useState} from 'react'
 import {Form, Button, Card, Alert} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css"
-import { useAuth } from "../contexts/AuthContext"
+import {useAuth} from "../contexts/AuthContext"
 import {Link, useHistory} from "react-router-dom"
 
 export default function Login() {
@@ -20,7 +22,7 @@ export default function Login() {
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
             setLoading(false)
-            history.push("/user-board")
+            history.push("/")
         } catch {
             setLoading(false)
             setError('Failed to log in')
@@ -35,12 +37,12 @@ export default function Login() {
                     {error && <Alert variant="danger">{error}</Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Label className="mb-1">Email</Form.Label>
+                            <Form.Control type="email" ref={emailRef} required/>
                         </Form.Group>
-                        <Form.Group id="password">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" ref={passwordRef} required />
+                        <Form.Group className="mt-2 mb-4" id="password">
+                            <Form.Label className="mb-1">Password</Form.Label>
+                            <Form.Control type="password" ref={passwordRef} required/>
                         </Form.Group>
                         <Button disabled={loading} className="w-100" type="submit">
                             Login
@@ -51,9 +53,16 @@ export default function Login() {
                     </div>
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
-                Need an account? <Link to="/signup">Sign Up</Link>
-            </div>
+            <div>&nbsp;</div>
+            <Card>
+                <Card.Body>
+                    <form>
+                        <p>Need an account? </p>
+                        <Button onClick={() => history.push('/Signup')} variant="outline-secondary" size="sm"
+                                className=" w-100 text-center mt-1"
+                                style={{textDecoration: 'none'}}><i>Signup</i></Button></form>
+                </Card.Body>
+            </Card>
         </>
     )
 }
