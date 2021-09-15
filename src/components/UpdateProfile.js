@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "../contexts/AuthContext"
-import { Link, useHistory } from "react-router-dom"
+import {useAuth} from "../contexts/AuthContext"
+import {useHistory} from "react-router-dom"
 
 export default function UpdateProfile() {
     const emailRef = useRef()
@@ -59,12 +59,12 @@ export default function UpdateProfile() {
                             />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Label className="mt-1 mb-1">Enter a new password</Form.Label>
+                            <Form.Label className="mt-1 mb-1">Create a new password</Form.Label>
                             <Form.Control
                                 className="mb-1"
                                 type="password"
                                 ref={passwordRef}
-                                placeholder="Leave blank to keep the same"
+                                placeholder="Enter a new password"
                             />
                         </Form.Group>
                         <Form.Group id="password-confirm">
@@ -73,7 +73,7 @@ export default function UpdateProfile() {
                                 className="mb-1"
                                 type="password"
                                 ref={passwordConfirmRef}
-                                placeholder="Leave blank to keep the same"
+                                placeholder="Retype new password"
                             />
                         </Form.Group>
                         <Button disabled={loading} className="w-100 mt-2" type="submit">Update</Button>

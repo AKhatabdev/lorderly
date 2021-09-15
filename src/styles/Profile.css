@@ -12,12 +12,12 @@
 }
 
 .avatar:hover h3 {
-    opacity: 0;
+    opacity: 1;
 }
 
 .avatar img {
     align-content: center;
-    top: 70px;
+    top: 60px;
     left: 85px;
     position: absolute;
     height: 70px;
@@ -28,8 +28,9 @@
 }
 
 .avatar h3 {
-    top: 140px;
-    left: 60px;
+    z-index: auto;
+    top: 100px;
+    left: 70px;
     margin: 4px 0 0;
     position: absolute;
     font-size: 12px;
@@ -37,7 +38,7 @@
     width: 100px;
     color: #f5f6f7;
     text-align: center;
-    opacity: 1;
+    opacity: 0;
 }
 
 .logout i {

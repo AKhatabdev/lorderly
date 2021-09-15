@@ -22,6 +22,7 @@ export default function Profile() {
         <>
             <div className="avatar" onClick={() => history.push('/update-profile')}>
                 <img src="/images/avatars/avatar1.png" alt="Title"/>
+                <h3>Profile</h3>
             </div>
             <div className="logout" onClick={handleLogout}>
                 <Link to="/login">
