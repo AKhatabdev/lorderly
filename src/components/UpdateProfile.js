@@ -43,6 +43,7 @@ export default function UpdateProfile() {
 
     return (
         <>
+            <div className="segue" onClick={() => history.push('/landing-page')}></div>
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4">Update Profile</h2>

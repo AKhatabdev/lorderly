@@ -1,20 +1,25 @@
 import "../styles/Profile.css";
-import React from "react";
+
+import React, {useState} from "react";
 import {useHistory} from "react-router-dom"
 import {Link} from "react-router-dom"
 import firebase from "../firebase";
 import {useAuth} from "../contexts/AuthContext"
 import {AiOutlineLogout} from 'react-icons/ai';
+import {Alert} from "react-bootstrap";
 
 export default function Profile() {
     const user = firebase.auth().currentUser;
     const history = useHistory()
+    const [error, setError] = useState('')
+    const {logout} = useAuth()
 
     async function handleLogout() {
         try {
-            await useAuth.logout()
+            await logout()
             console.log(user.uid)
         } catch {
+            setError('Failed to logout')
         }
     }
 
@@ -24,11 +29,13 @@ export default function Profile() {
                 <img src="/images/avatars/avatar1.png" alt="Title"/>
                 <h3>Profile</h3>
             </div>
+            <div className="segue" onClick={() => history.push('/landing-page')}></div>
+            {error && <Alert variant="danger">{error}</Alert>}
             <div className="logout" onClick={handleLogout}>
                 <Link to="/login">
                     <i><AiOutlineLogout/></i>
                 </Link>
             </div>
-            </>
+        </>
         );
 }

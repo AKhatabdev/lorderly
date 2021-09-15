@@ -31,6 +31,7 @@ export default function Login() {
 
     return (
         <>
+            <div className="segue" onClick={() => history.push('/landing-page')}></div>
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4">Log In</h2>

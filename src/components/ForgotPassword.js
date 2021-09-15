@@ -1,11 +1,14 @@
-import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import "../styles/ForgotPassword.css";
+
+
+import React, {useRef, useState} from "react"
+import {Form, Button, Card, Alert} from "react-bootstrap"
 import {useAuth} from "../contexts/AuthContext"
 import {useHistory} from "react-router-dom"
 
 export function ForgotPassword() {
     const emailRef = useRef()
-    const { resetPassword } = useAuth()
+    const {resetPassword} = useAuth()
     const [error, setError] = useState("")
     const [message, setMessage] = useState("")
     const [loading, setLoading] = useState(false)
@@ -30,6 +33,7 @@ export function ForgotPassword() {
 
     return (
         <>
+            <div className="segue" onClick={() => history.push('/landing-page')}></div>
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4">Password Reset</h2>
