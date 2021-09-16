@@ -15,28 +15,22 @@ import NavBar from "./NavBar";
 function App() {
 
     return (
-        <Container
-            className="d-flex align-items-center justify-content-center"
-            style={{minHeight: "100vh"}}>
-            <NavBar/>
-            <div className="App">
-                <div className="Header">
-                    <img src="/images/title/title_Lorderly.png" alt="Title"/>
-                </div>
                 <Router>
+                    <NavBar/>
                     <AuthProvider>
                         <Switch>
-                            <PrivateRoute exact path="/" component={UserBoard}/>
-                            <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
-                            <Route path="/landing-page" component={LandingPage}/>
+                            <Container className="d-flex align-items-center justify-content-center"
+                                       style={{minHeight: "100vh"}}>
+                                <PrivateRoute exact path="/" component={UserBoard}/>
+                                <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
+                                <Route path="/landing-page" component={LandingPage}/>
                                 <Route path="/signup" component={Signup}/>
                                 <Route path="/login" component={Login}/>
                                 <Route path="/forgot-password" component={ForgotPassword}/>
-                            </Switch>
+                            </Container>
+                        </Switch>
                         </AuthProvider>
                     </Router>
-                </div>
-            </Container>
         )
 }
 

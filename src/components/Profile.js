@@ -29,7 +29,6 @@ export default function Profile() {
                 <img src="/images/avatars/avatar1.png" alt="Title"/>
                 <h3>Profile</h3>
             </div>
-            <div className="segue" onClick={() => history.push('/landing-page')}></div>
             {error && <Alert variant="danger">{error}</Alert>}
             <div className="logout" onClick={handleLogout}>
                 <Link to="/login">
