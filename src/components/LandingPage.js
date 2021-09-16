@@ -29,8 +29,8 @@ export function LandingPage() {
                     </Card>
                 </CardGroup>
             </Container>
-            <Card style={{height: '200px', width: 'auto'}} bg="transparent" variant="dark">
-                <Card.Body>
+            <Card style={{height: '320px', width: 'auto'}} bg="black" variant="dark">
+                <Card.Body bg="black">
                     <h4 className=" text-center text-white">FEATURED ON</h4>
                     <div className="text-center">
                         <Card.Img src={pressImage} style={{width: 'auto'}} className="align-items: center"/>
