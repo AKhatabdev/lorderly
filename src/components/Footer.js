@@ -1,6 +1,6 @@
 import "../styles/Footer.css"
 
-import React, {useState} from 'react';
+import React from 'react';
 import {Navbar, NavbarBrand, ListGroupItem, ListGroup} from "react-bootstrap";
 import {SocialIcon} from 'react-social-icons';
 

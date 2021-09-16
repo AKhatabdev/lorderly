@@ -1,3 +1,4 @@
+/*noinspection CssUnusedSymbol*/
 .List-Title-Edit {
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@
     background: rgba(211, 211, 211, 1);
 }
 
+/*noinspection CssUnusedSymbol*/
 .List-Title-Textarea {
     margin: 6px 0 5px 6px;
     border-radius: 3px;
@@ -27,6 +29,7 @@
     text-justify: distribute;
 }
 
+/*noinspection CssUnusedSymbol*/
 .List-Title-Textarea:focus {
     box-shadow: inset 0 0 0 4px #0079bf;
 }

@@ -10,6 +10,7 @@
     flex-shrink: 0;
 }
 
+/*noinspection CssUnusedSymbol*/
 .Add-List-Button {
     background-color: rgba(0, 0, 0, 0.12);
     border-radius: 10px;
@@ -24,6 +25,7 @@
     height: fit-content;
 }
 
+/*noinspection CssUnusedSymbol*/
 .Add-List-Button:hover {
     background-color: rgba(0, 0, 0, 0.24);
 }

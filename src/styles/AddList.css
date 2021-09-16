@@ -1,9 +1,11 @@
+/*noinspection ALL,CssUnusedSymbol*/
 .Add-List-Editor {
     background: #dfe3e6;
     border-radius: 5px;
     padding: 2px 2px;
 }
 
+/*noinspection CssUnusedSymbol*/
 .Add-List-Button{
     user-select: none;
 }

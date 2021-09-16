@@ -15,6 +15,7 @@
     font-weight: bold;
 }
 
+/*noinspection CssUnusedSymbol*/
 .Toggle-Add-Card {
     cursor: pointer;
     padding: 10px;
@@ -25,6 +26,7 @@
     align-items: center;
 }
 
+/*noinspection CssUnusedSymbol*/
 .Toggle-Add-Card:hover {
     background-color: rgba(9, 45, 66, 0.13);
     color: #17394d;
