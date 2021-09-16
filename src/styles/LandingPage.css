@@ -1,5 +1,11 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+h4 {
+    font-weight: bold;
+}
+
+.PressImage {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    alignment: center;
+    max-width: 720px;
 }

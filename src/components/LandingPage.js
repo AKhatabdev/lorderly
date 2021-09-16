@@ -1,9 +1,11 @@
 import "../styles/LandingPage.css";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import {Card, CardGroup, Container} from "react-bootstrap";
 import mainRight from './images/imageonline-co-white_1.png';
-import pressImage from './images/press-logo_mobile.png'
+import pressImage from './images/press-logo_mobile_final.png'
 import React from "react";
+
 
 export function LandingPage() {
 
@@ -29,14 +31,22 @@ export function LandingPage() {
                     </Card>
                 </CardGroup>
             </Container>
-            <Card style={{height: '320px', width: 'auto'}} bg="black" variant="dark">
+            <Card style={{height: '320px', width: 'auto'}} bg="transparent" variant="dark">
                 <Card.Body bg="black">
-                    <h4 className=" text-center text-white">FEATURED ON</h4>
+                    <h4 className=" text-center text-white">- FEATURED ON -</h4>
                     <div className="text-center">
-                        <Card.Img src={pressImage} style={{width: 'auto'}} className="align-items: center"/>
+                        <Card className="bg-transparent" style={{width: 'auto'}}>
+                            <div className="PressImage"><Card.Img src={pressImage}/></div>
+                        </Card>
                     </div>
                 </Card.Body>
             </Card>
+            <Card style={{height: '200px', width: 'auto', textAlign: "center"}} bg="white" variant="light">
+                <Card.Body bg="black">
+                    <Footer/>
+                </Card.Body>
+            </Card>
+
         </>
     )
 }
