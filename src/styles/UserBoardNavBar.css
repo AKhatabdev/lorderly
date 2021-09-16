@@ -39,7 +39,7 @@
     opacity: 0;
 }
 
-.logout i {
+.logout {
     margin: 0;
     top: 60px;
     right: 80px;
@@ -47,6 +47,10 @@
     opacity: 1;
     color: whitesmoke;
     font-size: xxx-large;
+}
+
+.logout i {
+    color: whitesmoke;
 }
 
 .logout:hover i {

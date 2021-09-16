@@ -14,7 +14,7 @@ export function LandingPage() {
             <NavBar/>
             <Container style={{top: '100px'}}>
                 <CardGroup className="m-5 ">
-                    <Card style={{height: '300px', width: '450px'}} bg="transparent" variant="dark">
+                    <Card style={{height: '300px', width: '400px'}} bg="transparent" variant="dark">
                         <Card.Body>
                             <h1 className="text-white">Keep track of your tasks.</h1>{' '}
                             <div>&nbsp;</div>

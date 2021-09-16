@@ -3,10 +3,10 @@ import "../styles/UserBoardNavBar.css";
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom"
 import {Link} from "react-router-dom"
-//import firebase from "../firebase";
 import {useAuth} from "../contexts/AuthContext"
 import {AiOutlineLogout, AiTwotoneEdit} from 'react-icons/ai';
 import {Alert} from "react-bootstrap";
+//import firebase from "../firebase";
 
 export default function UserBoardNavBar() {
     //const user = firebase.auth().currentUser;
@@ -17,7 +17,6 @@ export default function UserBoardNavBar() {
     async function handleLogout() {
         try {
             await logout()
-            //console.log(user.uid)
         } catch {
             setError('Failed to logout')
         }
@@ -31,7 +30,7 @@ export default function UserBoardNavBar() {
             </div>
             {error && <Alert variant="danger">{error}</Alert>}
             <div className="logout" onClick={handleLogout}>
-                <Link to="/login">
+                <Link to="/landing-page">
                     <i><AiOutlineLogout/></i>
                 </Link>
             </div>
