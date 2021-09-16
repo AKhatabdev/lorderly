@@ -9,9 +9,9 @@ export function LandingPage() {
         <>
             <NavBar/>
             <div>Landing-Page</div>
-            <diV><Image src={mainRight} className={"position-absolute"} fluid/></diV>
+            <Image src={mainRight} className={"position-absolute align-content-end"} fluid/>
             <div className="CBody">
-                <Card>
+                <Card className={"position-absolute align-content-start"}>
                     <Card.Body>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been the industry's standard dummy text ever since the 1500s, when an unknown printer
