@@ -1,7 +1,7 @@
 import "../styles/LandingPage.css";
 import NavBar from "./NavBar";
 import {Card, Image} from "react-bootstrap";
-import mainRight from './images/landingPage_image_main.jpg';
+import mainRight from './images/landingPage_image_main_white.jpg';
 
 export function LandingPage() {
 
@@ -9,7 +9,8 @@ export function LandingPage() {
         <>
             <NavBar/>
             <div>Landing-Page</div>
-            <div className="CBody" style={{zIndex: 100}}>
+            <diV><Image src={mainRight} className={"position-absolute"} fluid/></diV>
+            <div className="CBody">
                 <Card>
                     <Card.Body>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -22,7 +23,6 @@ export function LandingPage() {
                     </Card.Body>
                 </Card>
             </div>
-            <diV style={{zIndex: -100}}><img src={mainRight} alt="main-1"/></diV>
         </>
     )
 }
