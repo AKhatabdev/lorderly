@@ -1,10 +1,14 @@
 import "../styles/LandingPage.css";
+import NavBar from "./NavBar";
 
 export function LandingPage() {
 
     return (
         <>
-            <div>Landing-Page</div>
+            <container>
+                <NavBar/>
+                <div>Landing-Page</div>
+            </container>
         </>
     )
 }

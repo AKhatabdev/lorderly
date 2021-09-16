@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../styles/UserBoard.css";
 
 import React, { Component } from "react";
 import Board from "./Board";
@@ -7,10 +7,14 @@ import Profile from "./Profile";
 class UserBoard extends Component {
     render() {
         return (
-            <div className="App">
-                    <Board />
-                    <Profile />
+            <>
+                <Profile/>
+                <div className="container">
+                    <div className="UserBoard">
+                        <Board/>
+                    </div>
                 </div>
+            </>
         );
     }
 }

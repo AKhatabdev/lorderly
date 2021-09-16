@@ -10,27 +10,30 @@ import {PrivateRoute} from "./PrivateRoute"
 import UpdateProfile from "./UpdateProfile";
 import LandingPage from "./LandingPage";
 import UserBoard from "./UserBoard";
-import NavBar from "./NavBar";
 
 function App() {
 
     return (
-                <Router>
-                    <NavBar/>
-                    <AuthProvider>
-                        <Switch>
-                            <Container className="d-flex align-items-center justify-content-center"
-                                       style={{minHeight: "100vh"}}>
-                                <PrivateRoute exact path="/" component={UserBoard}/>
+        <>
+            <Router>
+                <AuthProvider>
+                    <Switch>
+                        <PrivateRoute exact path="/" component={UserBoard}/>
+                        <Route path="/landing-page" component={LandingPage}/>
+                        <Container
+                            className="d-flex align-items-center justify-content-center"
+                            style={{minHeight: "100vh"}}>
+                            <div className="App">
                                 <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
-                                <Route path="/landing-page" component={LandingPage}/>
                                 <Route path="/signup" component={Signup}/>
                                 <Route path="/login" component={Login}/>
                                 <Route path="/forgot-password" component={ForgotPassword}/>
-                            </Container>
-                        </Switch>
-                        </AuthProvider>
-                    </Router>
+                            </div>
+                        </Container>
+                    </Switch>
+                </AuthProvider>
+            </Router>
+        </>
         )
 }
 

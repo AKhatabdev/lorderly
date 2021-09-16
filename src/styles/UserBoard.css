@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    scrollbar-base-color: transparent;
+    max-width: fit-content;
+}
+
+.UserBoard {
+    align-self: flex-end;
+    margin-top: 200px;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+}
