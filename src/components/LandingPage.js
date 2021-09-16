@@ -1,7 +1,7 @@
 import "../styles/LandingPage.css";
 import NavBar from "./NavBar";
 import {Card, Image} from "react-bootstrap";
-import mainRight from './images/landingPage_image_main_white.jpg';
+import mainRight from './images/imageonline-co-white.png';
 
 export function LandingPage() {
 
