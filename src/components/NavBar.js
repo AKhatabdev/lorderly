@@ -10,10 +10,11 @@ export default function NavBar() {
                 variant="light">
             <NavbarBrand className="m-3 fw-bolder">Lorderly</NavbarBrand>
             <Container className="float-end m-3 p-1">
-                <Button onClick={() => history.push('/login')} ClassName="m-3" type="button"
+                <Button onClick={() => history.push('/login')} ClassName="m-3 fw-bolder" type="button"
                         variant="outline-primary">Login</Button>{' '}
                 <Button className="btn-sm" variant="outline-light"> </Button>
-                <Button onClick={() => history.push('/signup')} ClassName="m-3" type="button" variant="primary">Sign
+                <Button onClick={() => history.push('/signup')} ClassName="m-3 fw-bolder" type="button"
+                        variant="primary">Sign
                     Up</Button>{' '}
             </Container>
         </Navbar>
