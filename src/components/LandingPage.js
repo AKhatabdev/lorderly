@@ -36,7 +36,6 @@ export function LandingPage() {
                         <Card.Img src={pressImage} style={{width: 'auto'}} className="align-items: center"/>
                     </div>
                 </Card.Body>
-
             </Card>
         </>
     )
