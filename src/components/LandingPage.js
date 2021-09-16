@@ -5,10 +5,8 @@ export function LandingPage() {
 
     return (
         <>
-            <container>
                 <NavBar/>
                 <div>Landing-Page</div>
-            </container>
         </>
     )
 }

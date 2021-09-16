@@ -1,14 +1,14 @@
 import "../styles/UserBoard.css";
 
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Board from "./Board";
-import Profile from "./Profile";
+import UserBoardNavBar from "./UserBoardNavBar";
 
 class UserBoard extends Component {
     render() {
         return (
             <>
-                <Profile/>
+                <UserBoardNavBar/>
                 <div className="container">
                     <div className="UserBoard">
                         <Board/>
