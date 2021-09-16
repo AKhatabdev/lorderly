@@ -7,7 +7,7 @@ export default function NavBar() {
 
     return (
         <Navbar className="justify-content-between" id="navigation-bar" fixed="top" sticky="top" bg="transparent"
-                variant="dark">
+                variant="dark" fluid>
             <NavbarBrand className="m-3 fw-bolder">Lorderly</NavbarBrand>
             <Container className="float-end m-3 p-1">
                 <Button onClick={() => history.push('/login')} ClassName="m-3 fw-bolder" type="button"
