@@ -51,6 +51,7 @@
 
 .logout i {
     color: whitesmoke;
+    min-width: 40px;
 }
 
 .logout:hover i {

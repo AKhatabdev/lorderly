@@ -1,0 +1,8 @@
+.title img:hover {
+    border-radius: 8%;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    box-shadow: 10px 10px 5px #888888;
+}

@@ -1,4 +1,5 @@
 import "../styles/Login.css";
+import "../styles/OnHover.css"
 
 import React, {useRef, useState} from 'react'
 import {Form, Button, Card, Alert} from 'react-bootstrap'
@@ -6,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import {useAuth} from "../contexts/AuthContext"
 import {Link, useHistory} from "react-router-dom"
 import Fade from "react-reveal/Fade"
+import logo from "./images/title_Lorderly.png";
 
 export default function Login() {
     const emailRef = useRef()
@@ -35,7 +37,10 @@ export default function Login() {
             <Fade>
                 <Card>
                     <Card.Body>
-                        <h2 className="text-center mb-4">Log In</h2>
+                        <div className="text-center justify-content-center title">
+                            <img onClick={() => history.push('/Landing-page')} src={logo}
+                                 className=" justify-content-center m-1" width="180px" alt="Logo-Title"/>
+                        </div>
                         {error && <Alert variant="danger">{error}</Alert>}
                         <Form onSubmit={handleSubmit}>
                             <Form.Group id="email">
