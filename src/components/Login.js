@@ -5,6 +5,7 @@ import {Form, Button, Card, Alert} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {useAuth} from "../contexts/AuthContext"
 import {Link, useHistory} from "react-router-dom"
+import Fade from "react-reveal/Fade"
 
 export default function Login() {
     const emailRef = useRef()
@@ -31,38 +32,42 @@ export default function Login() {
 
     return (
         <>
-            <Card>
-                <Card.Body>
-                    <h2 className="text-center mb-4">Log In</h2>
-                    {error && <Alert variant="danger">{error}</Alert>}
-                    <Form onSubmit={handleSubmit}>
-                        <Form.Group id="email">
-                            <Form.Label className="mb-1">Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required/>
-                        </Form.Group>
-                        <Form.Group className="mt-2 mb-4" id="password">
-                            <Form.Label className="mb-1">Password</Form.Label>
-                            <Form.Control type="password" ref={passwordRef} required/>
-                        </Form.Group>
-                        <Button disabled={loading} className="w-100" type="submit">
-                            Login
-                        </Button>
-                    </Form>
-                    <div className="w-100 text-center mt-3">
-                        <Link to="/forgot-password">Forgot Password?</Link>
-                    </div>
-                </Card.Body>
-            </Card>
+            <Fade>
+                <Card>
+                    <Card.Body>
+                        <h2 className="text-center mb-4">Log In</h2>
+                        {error && <Alert variant="danger">{error}</Alert>}
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group id="email">
+                                <Form.Label className="mb-1">Email</Form.Label>
+                                <Form.Control type="email" ref={emailRef} required/>
+                            </Form.Group>
+                            <Form.Group className="mt-2 mb-4" id="password">
+                                <Form.Label className="mb-1">Password</Form.Label>
+                                <Form.Control type="password" ref={passwordRef} required/>
+                            </Form.Group>
+                            <Button disabled={loading} className="w-100" type="submit">
+                                Login
+                            </Button>
+                        </Form>
+                        <div className="w-100 text-center mt-3">
+                            <Link to="/forgot-password">Forgot Password?</Link>
+                        </div>
+                    </Card.Body>
+                </Card>
+            </Fade>
             <div>&nbsp;</div>
-            <Card>
-                <Card.Body>
-                    <form>
-                        <p>Need an account? </p>
-                        <Button onClick={() => history.push('/Signup')} variant="outline-secondary" size="sm"
-                                className=" w-100 text-center mt-1"
-                                style={{textDecoration: 'none'}}><i>Signup</i></Button></form>
-                </Card.Body>
-            </Card>
+            <Fade bottom>
+                <Card>
+                    <Card.Body>
+                        <form>
+                            <p>Need an account? </p>
+                            <Button onClick={() => history.push('/Signup')} variant="outline-secondary" size="sm"
+                                    className=" w-100 text-center mt-1"
+                                    style={{textDecoration: 'none'}}><i>Signup</i></Button></form>
+                    </Card.Body>
+                </Card>
+            </Fade>
         </>
     )
 }

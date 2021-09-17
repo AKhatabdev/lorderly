@@ -20,6 +20,7 @@ function App() {
                     <Switch>
                         <PrivateRoute exact path="/" component={UserBoard}/>
                         <Route path="/landing-page" component={LandingPage}/>
+
                         <Container
                             className="d-flex align-items-center justify-content-center"
                             style={{minHeight: "100vh"}}>
@@ -30,6 +31,7 @@ function App() {
                                 <Route path="/forgot-password" component={ForgotPassword}/>
                             </div>
                         </Container>
+
                     </Switch>
                 </AuthProvider>
             </Router>
