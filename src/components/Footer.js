@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <Navbar className="justify-content-center" id="footer" bg="transparent" sticky={"bottom"}
-                variant="dark" fluid>
+                variant="dark">
             <ListGroup className="list-group-flush bg-transparent justify-content-evenly align-content-center">
                 <ListGroupItem className="bg-transparent">
                     <p className="text-center text-black fw-normal">By Awais Khatab&copy; 2021 Built with
