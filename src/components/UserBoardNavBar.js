@@ -4,12 +4,10 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom"
 import {Link} from "react-router-dom"
 import {useAuth} from "../contexts/AuthContext"
-import {AiOutlineLogout, AiTwotoneEdit} from 'react-icons/ai';
+import {AiOutlineLogout} from 'react-icons/ai';
 import {Alert} from "react-bootstrap";
-//import firebase from "../firebase";
 
 export default function UserBoardNavBar() {
-    //const user = firebase.auth().currentUser;
     const history = useHistory()
     const [error, setError] = useState('')
     const {logout} = useAuth()
@@ -24,9 +22,9 @@ export default function UserBoardNavBar() {
 
     return (
         <>
-        <div className="avatar" onClick={() => history.push('/update-profile')}>
-                <img src="/images/avatars/avatar1.png" alt="Title"/>
-                <h3><AiTwotoneEdit/></h3>
+            <div className="avatar">
+                <img className="avatar" onClick={() => history.push('/update-profile')}
+                     src="/images/avatars/avatar2.png" alt="Title"/>
             </div>
             {error && <Alert variant="danger">{error}</Alert>}
             <div className="logout" onClick={handleLogout}>
