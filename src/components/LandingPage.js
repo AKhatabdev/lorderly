@@ -57,7 +57,6 @@ export function LandingPage() {
                     <Footer/>
                 </Card.Body>
             </Card>
-
         </>
     )
 }
