@@ -51,7 +51,7 @@ export default function Login() {
                                 <Form.Label className="mb-1">Password</Form.Label>
                                 <Form.Control type="password" ref={passwordRef} required/>
                             </Form.Group>
-                            <Button disabled={loading} className="w-100" type="submit">
+                            <Button disabled={loading} className="w-100" type="submit" variant="dark">
                                 Login
                             </Button>
                         </Form>
@@ -67,9 +67,9 @@ export default function Login() {
                     <Card.Body>
                         <form>
                             <p>Need an account? </p>
-                            <Button onClick={() => history.push('/Signup')} variant="outline-secondary" size="sm"
-                                    className=" w-100 text-center mt-1"
-                                    style={{textDecoration: 'none'}}><i>Signup</i></Button></form>
+                            <Button onClick={() => history.push('/Signup')} variant="outline-primary" size="sm"
+                                    className=" w-100 text-center mt-1">
+                                Signup</Button></form>
                     </Card.Body>
                 </Card>
             </Fade>

@@ -68,9 +68,9 @@ export default function Signup() {
                     <Card.Body>
                         <form>
                             <p>Already have an account? </p>
-                            <Button onClick={() => history.push('/Login')} variant="outline-secondary" size="sm"
-                                    className=" w-100 text-center mt-2"
-                                    style={{textDecoration: 'none'}}><i>Login</i></Button>
+                            <Button onClick={() => history.push('/Login')} variant="outline-dark" size="sm"
+                                    className=" w-100 text-center mt-2">
+                                Login</Button>
                         </form>
                     </Card.Body>
                 </Card>
