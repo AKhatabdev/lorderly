@@ -7,12 +7,13 @@ import pressImage from './images/press-logo_mobile_final.png'
 import React from "react";
 import Fade from 'react-reveal/Fade';
 
-
 export function LandingPage() {
 
     return (
         <>
-            <NavBar/>
+            <Fade top>
+                <NavBar/>
+            </Fade>
             <Container style={{top: '100px'}}>
                 <CardGroup className="m-5 ">
                     <Card style={{height: '300px', width: '400px'}} bg="transparent" variant="dark">
