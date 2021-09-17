@@ -14,7 +14,7 @@ class UserBoard extends Component {
                     <TitleHeading/>
                     <UserBoardNavBar/>
                 </Fade>
-                <Fade bottom>
+                <Fade bottom delay={100}>
                     <div className="container">
                         <div className="UserBoard">
                             <Board/>

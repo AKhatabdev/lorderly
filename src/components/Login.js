@@ -34,7 +34,7 @@ export default function Login() {
 
     return (
         <>
-            <Fade>
+            <Fade delay={100}>
                 <Card>
                     <Card.Body>
                         <div className="text-center justify-content-center title">
@@ -62,7 +62,7 @@ export default function Login() {
                 </Card>
             </Fade>
             <div>&nbsp;</div>
-            <Fade bottom>
+            <Fade bottom delay={100}>
                 <Card>
                     <Card.Body>
                         <form>

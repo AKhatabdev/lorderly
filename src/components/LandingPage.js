@@ -12,6 +12,10 @@ import Fade from 'react-reveal/Fade';
 export function LandingPage() {
     const history = useHistory()
 
+    function handleEmailSubmit() {
+        history.push('/signup')
+    }
+
     return (
         <>
             <Fade top>
@@ -21,37 +25,35 @@ export function LandingPage() {
                 <CardGroup className="m-5">
                     <Card style={{height: '300px', width: '400px'}} bg="transparent" variant="dark">
                         <Card.Body>
-                            <Fade left>
+                            <Fade left delay={500}>
                                 <h1 className="text-white">Keep track of your tasks.</h1>{' '}
                             </Fade>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
-                            <Fade bottom>
+                            <Fade bottom delay={1500}>
                                 <h4 className="text-white fw-normal">
                                     Manage projects, and reach new productivity peaks.
                                 </h4>
                                 <div>&nbsp;</div>
+                            </Fade>
+                            <Fade bottom delay={2500}>
                                 <h4 className="text-white fw-normal">
                                     Start with a Lorderly board, lists, and cards. Organise tasks.
                                     Customize and expand with more features as your teamwork grows.
                                 </h4>
-                                <div>&nbsp;</div>
-                                <div>&nbsp;</div>
-                                <Form>
-                                    <Row>
-                                        <Col>
-                                            <Form.Control
-                                                type="email"
-                                                placeholder="Enter your email"
-                                                required/>
-                                        </Col>
-                                        <Col>
-                                            <Button onClick={() => history.push('/signup')} ClassName="m-3 fw-bolder"
-                                                    type="submit" variant="primary">Sign Up</Button>
-                                        </Col>
+                            </Fade>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <Form>
+                                <Row>
+                                    <Col>
+                                        <Fade right delay={3500}>
+                                            <Button onClick={handleEmailSubmit} className="fw-bolder"
+                                                    type="submit" variant="light">START YOUR FREE TRIAL</Button>
+                                        </Fade>
+                                    </Col>
                                     </Row>
                                 </Form>
-                            </Fade>
                         </Card.Body>
                     </Card>
                     <Card className="bg-transparent" style={{width: 'auto', padding: '1px'}}>
@@ -61,7 +63,7 @@ export function LandingPage() {
             </Container>
             <Card style={{height: '320px', width: 'auto'}} bg="transparent" variant="dark">
                 <Card.Body bg="black">
-                    <Fade bottom>
+                    <Fade bottom delay={100}>
                         <h4 className="text-center text-white">- FEATURED ON -</h4>
                         <div className="text-center">
                             <Card className="bg-transparent" style={{width: 'auto'}}>

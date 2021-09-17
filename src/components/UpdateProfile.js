@@ -44,7 +44,7 @@ export default function UpdateProfile() {
 
     return (
         <>
-            <Fade>
+            <Fade delay={100}>
                 <Card>
                     <Card.Body>
                         <h3 className="text-center mb-4">Update Profile</h3>
