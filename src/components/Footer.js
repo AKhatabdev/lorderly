@@ -19,7 +19,7 @@ export default function Footer() {
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
                                     url="https://www.instagram.com/interdimensional_pancake.eng/"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
-                                    url="https://awaiskhatab.engineer/"/>
+                                    url="https://asak10.brighton.domains/website/"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
                                     url="https://github.com/AKhatabdev"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}

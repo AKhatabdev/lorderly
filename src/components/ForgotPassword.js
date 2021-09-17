@@ -6,6 +6,7 @@ import {Form, Button, Card, Alert} from "react-bootstrap"
 import {useAuth} from "../contexts/AuthContext"
 import {useHistory} from "react-router-dom"
 import Fade from "react-reveal/Fade"
+import logo from "./images/title_Lorderly.png";
 
 export function ForgotPassword() {
     const emailRef = useRef()
@@ -37,7 +38,10 @@ export function ForgotPassword() {
             <Fade>
                 <Card>
                     <Card.Body>
-                        <h2 className="text-center mb-4">Password Reset</h2>
+                        <div className="text-center justify-content-center title">
+                            <img onClick={() => history.push('/Landing-page')} src={logo}
+                                 className=" justify-content-center m-1" width="180px" alt="Logo-Title"/>
+                        </div>
                         {error && <Alert variant="danger">{error}</Alert>}
                         {message && <Alert variant="success">{message}</Alert>}
                         <Form onSubmit={handleSubmit}>
@@ -49,9 +53,8 @@ export function ForgotPassword() {
                                 Reset Password
                             </Button>
                         </Form>
-                        <Button onClick={() => history.push('/Login')} variant="outline-secondary" size="sm"
-                                className=" w-100 text-center mt-2"
-                                style={{textDecoration: 'none'}}><i>Login</i></Button>
+                        <Button onClick={() => history.push('/Login')} variant="outline-dark" size="sm"
+                                className=" w-100 text-center mt-2">Login</Button>
                     </Card.Body>
                 </Card>
             </Fade>
@@ -61,9 +64,8 @@ export function ForgotPassword() {
                     <Card.Body>
                         <form>
                             <p>Need an account? </p>
-                            <Button onClick={() => history.push('/Signup')} variant="outline-secondary" size="sm"
-                                    className=" w-100 text-center mt-1"
-                                    style={{textDecoration: 'none'}}><i>Signup</i></Button></form>
+                            <Button onClick={() => history.push('/Signup')} variant="outline-primary" size="sm"
+                                    className=" w-100 text-center mt-1">Signup</Button></form>
                     </Card.Body>
                 </Card>
             </Fade>

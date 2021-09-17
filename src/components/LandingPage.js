@@ -1,21 +1,24 @@
 import "../styles/LandingPage.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import {Card, CardGroup, Container} from "react-bootstrap";
+import {Button, Card, CardGroup, Container, Form, Col, Row} from "react-bootstrap";
 import mainRight from './images/imageonline-co-white_1.png';
 import pressImage from './images/press-logo_mobile_final.png'
 import React from "react";
+import {useHistory} from "react-router-dom"
+
 import Fade from 'react-reveal/Fade';
 
 export function LandingPage() {
+    const history = useHistory()
 
     return (
         <>
             <Fade top>
                 <NavBar/>
             </Fade>
-            <Container style={{top: '100px'}}>
-                <CardGroup className="m-5 ">
+            <Container style={{top: '100px', margin: '1px'}}>
+                <CardGroup className="m-5">
                     <Card style={{height: '300px', width: '400px'}} bg="transparent" variant="dark">
                         <Card.Body>
                             <Fade left>
@@ -32,10 +35,26 @@ export function LandingPage() {
                                     Start with a Lorderly board, lists, and cards. Organise tasks.
                                     Customize and expand with more features as your teamwork grows.
                                 </h4>
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+                                <Form>
+                                    <Row>
+                                        <Col>
+                                            <Form.Control
+                                                type="email"
+                                                placeholder="Enter your email"
+                                                required/>
+                                        </Col>
+                                        <Col>
+                                            <Button onClick={() => history.push('/signup')} ClassName="m-3 fw-bolder"
+                                                    type="submit" variant="primary">Sign Up</Button>
+                                        </Col>
+                                    </Row>
+                                </Form>
                             </Fade>
                         </Card.Body>
                     </Card>
-                    <Card className="bg-transparent" style={{width: 'auto'}}>
+                    <Card className="bg-transparent" style={{width: 'auto', padding: '1px'}}>
                         <Card.Img src={mainRight}/>
                     </Card>
                 </CardGroup>
@@ -43,7 +62,7 @@ export function LandingPage() {
             <Card style={{height: '320px', width: 'auto'}} bg="transparent" variant="dark">
                 <Card.Body bg="black">
                     <Fade bottom>
-                        <h4 className=" text-center text-white">- FEATURED ON -</h4>
+                        <h4 className="text-center text-white">- FEATURED ON -</h4>
                         <div className="text-center">
                             <Card className="bg-transparent" style={{width: 'auto'}}>
                                 <div className="PressImage"><Card.Img src={pressImage}/></div>

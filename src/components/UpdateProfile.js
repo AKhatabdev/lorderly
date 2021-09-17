@@ -47,7 +47,7 @@ export default function UpdateProfile() {
             <Fade>
                 <Card>
                     <Card.Body>
-                        <h2 className="text-center mb-4">Update Profile</h2>
+                        <h3 className="text-center mb-4">Update Profile</h3>
                         {error && <Alert variant="danger">{error}</Alert>}
                         <Form onSubmit={handleSubmit}>
                             <Form.Group id="email">
@@ -79,9 +79,9 @@ export default function UpdateProfile() {
                                 />
                             </Form.Group>
                             <Button disabled={loading} className="w-100 mt-2" type="submit">Update</Button>
-                            <Button onClick={() => history.push('/')} variant="outline-secondary" size="sm"
-                                    className=" w-100 text-center mt-4"
-                                    style={{textDecoration: 'none'}}><i>Cancel</i></Button>
+                            <Button onClick={() => history.push('/')} variant="outline-danger" size="sm"
+                                    className=" w-100 text-center mt-4">
+                                Cancel</Button>
                         </Form>
                     </Card.Body>
                 </Card>
