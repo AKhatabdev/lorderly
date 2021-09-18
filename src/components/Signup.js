@@ -7,6 +7,7 @@ import {useAuth} from "../contexts/AuthContext";
 import {useHistory} from "react-router-dom";
 import Fade from "react-reveal/Fade"
 import logo from "./images/title_Lorderly.png";
+import Footer from "./Footer";
 
 export default function Signup() {
     const emailRef = useRef()
@@ -75,6 +76,11 @@ export default function Signup() {
                     </Card.Body>
                 </Card>
             </Fade>
+            <Card style={{height: '200px', width: 'auto', textAlign: "center"}} bg="white" variant="light">
+                <Card.Body bg="black">
+                    <Footer/>
+                </Card.Body>
+            </Card>
         </>
     )
 }

@@ -20,7 +20,6 @@ function App() {
                     <Switch>
                         <PrivateRoute exact path="/" component={UserBoard}/>
                         <Route path="/landing-page" component={LandingPage}/>
-
                         <Container
                             className="d-flex align-items-center justify-content-center"
                             style={{minHeight: "100vh"}}>

@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import {useAuth} from "../contexts/AuthContext"
 import {useHistory} from "react-router-dom"
 import Fade from "react-reveal/Fade"
+import Footer from "./Footer";
 
 export default function UpdateProfile() {
     const emailRef = useRef()
@@ -44,7 +45,7 @@ export default function UpdateProfile() {
 
     return (
         <>
-            <Fade delay={100}>
+            <Fade top delay={50}>
                 <Card>
                     <Card.Body>
                         <h3 className="text-center mb-4">Update Profile</h3>
@@ -86,6 +87,11 @@ export default function UpdateProfile() {
                     </Card.Body>
                 </Card>
             </Fade>
+            <Card style={{height: '200px', width: 'auto', textAlign: "center"}} bg="white" variant="light">
+                <Card.Body bg="black">
+                    <Footer/>
+                </Card.Body>
+            </Card>
         </>
     )
 }
