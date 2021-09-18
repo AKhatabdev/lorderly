@@ -24,13 +24,12 @@ function App() {
                             className="d-flex align-items-center justify-content-center"
                             style={{minHeight: "100vh"}}>
                             <div className="App">
-                                <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
+                            <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
                                 <Route path="/signup" component={Signup}/>
                                 <Route path="/login" component={Login}/>
                                 <Route path="/forgot-password" component={ForgotPassword}/>
                             </div>
                         </Container>
-
                     </Switch>
                 </AuthProvider>
             </Router>
