@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    margin-top: 200px;
     align-items: center;
     justify-content: center;
     scroll-behavior: smooth;
@@ -9,7 +10,6 @@
 
 .UserBoard {
     align-self: flex-end;
-    margin-top: 200px;
     align-items: center;
     background: transparent;
     overflow: hidden;

@@ -22,7 +22,7 @@ export default function UserBoardNavBar() {
 
     return (
         <>
-            <div className="avatar">
+            <div className="avatar mb-3 p-2">
                 <img className="avatar" onClick={() => history.push('/update-profile')}
                      src="/images/avatars/avatar2.png" alt="Title"/>
             </div>
