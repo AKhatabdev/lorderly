@@ -8,4 +8,5 @@
 /*noinspection CssUnusedSymbol*/
 .Add-List-Button{
     user-select: none;
+    background-color: rgba(156, 156, 156, 0.29);
 }

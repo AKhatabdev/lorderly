@@ -15,8 +15,8 @@ export default function NavBar() {
     return (
         <Navbar className="justify-content-between title" id="navigation-bar" fixed="top" sticky="top" bg="white"
                 variant="dark">
-            <NavbarBrand onClick={refreshPage} className="m-3 fw-bolder"><img src={logo} width="150px"
-                                                                              alt="Logo-Title"/></NavbarBrand>
+            <NavbarBrand onClick={refreshPage} className="m-3 fw-bolder">
+                <img src={logo} width="150px" alt="Logo-Title"/></NavbarBrand>
             <Container className="float-end m-3 p-1 fw-bolder">
                 <Button onClick={() => history.push('/login')} className="m-3 fw-bolder" type="button"
                         variant="outline-dark">Login</Button>{' '}

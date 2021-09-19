@@ -7,7 +7,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #2a2a2a;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-base-color: transparent;
+    -webkit-overflow-scrolling: touch
 }
 
 code {

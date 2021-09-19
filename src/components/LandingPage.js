@@ -48,7 +48,7 @@ export function LandingPage() {
                                 <Row>
                                     <Col>
                                         <Fade right delay={3500}>
-                                            <Button onClick={handleEmailSubmit} className="fw-bolder"
+                                            <Button id="trialButton" onClick={handleEmailSubmit} className="fw-bolder"
                                                     type="submit" variant="outline-light">START YOUR FREE TRIAL</Button>
                                         </Fade>
                                     </Col>
@@ -67,7 +67,7 @@ export function LandingPage() {
                         <h4 className="text-center text-white">- FEATURED ON -</h4>
                         <div className="text-center">
                             <Card className="bg-transparent" style={{width: 'auto'}}>
-                                <div className="PressImage"><Card.Img src={pressImage}/></div>
+                                <div className="pressImage"><Card.Img src={pressImage}/></div>
                             </Card>
                         </div>
                     </Fade>

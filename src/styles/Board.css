@@ -1,7 +1,9 @@
 .Board {
-    height: 92vh;
+    height: 70vh;
     display: flex;
     overflow-x: auto;
+    margin-top: 60px;
+    position: relative;
 }
 
 .Add-List {
