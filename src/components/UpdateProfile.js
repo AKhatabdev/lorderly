@@ -33,7 +33,7 @@ export default function UpdateProfile() {
 
         Promise.all(promises)
             .then(() => {
-                history.push("/")
+                history.push("/user-board")
             })
             .catch(() => {
                 setError("Failed to update account")
@@ -80,7 +80,7 @@ export default function UpdateProfile() {
                                 />
                             </Form.Group>
                             <Button disabled={loading} className="w-100 mt-2" type="submit">Update</Button>
-                            <Button onClick={() => history.push('/')} variant="outline-danger" size="sm"
+                            <Button onClick={() => history.push('/user-board')} variant="outline-danger" size="sm"
                                     className=" w-100 text-center mt-4">
                                 Cancel</Button>
                         </Form>
