@@ -17,12 +17,13 @@ function App() {
         <>
             <Router>
                 <AuthProvider>
-                    <Route exact path="/" component={LandingPage}/>
                     <Switch>
+                        <Route exact path="/" component={LandingPage}/>
                         <PrivateRoute exact path="/user-board" component={UserBoard}/>
                         <Container
                             className="d-flex align-items-center justify-content-center"
                             style={{minHeight: "100vh"}}>
+
                             <div className="App">
                                 <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
                                 <Route path="/signup" component={Signup}/>
