@@ -19,10 +19,9 @@ export default function NavBar() {
                 <img src={logo} width="150px" alt="Logo-Title"/></NavbarBrand>
             <Container className="float-end m-3 p-1 fw-bolder">
                 <Button onClick={() => history.push('/login')} className="m-3 fw-bolder" type="button"
-                        variant="outline-dark">Login</Button>{' '}
+                        variant="outline-dark">Login</Button>
                 <Button onClick={() => history.push('/signup')} className="m-3 fw-bolder" type="button"
-                        variant="primary">Sign
-                    Up</Button>{' '}
+                        variant="primary">Sign Up</Button>{' '}
             </Container>
         </Navbar>
     );

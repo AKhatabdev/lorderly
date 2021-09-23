@@ -40,7 +40,7 @@ export function ForgotPassword() {
                 <Card>
                     <Card.Body>
                         <div className="text-center justify-content-center title">
-                            <img onClick={() => history.push('/Landing-page')} src={logo}
+                            <img onClick={() => history.push('/')} src={logo}
                                  className=" justify-content-center m-1" width="180px" alt="Logo-Title"/>
                         </div>
                         {error && <Alert variant="danger">{error}</Alert>}
