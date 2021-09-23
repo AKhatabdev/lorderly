@@ -60,5 +60,6 @@
   },
   "devDependencies": {
     "styled-components": "^5.3.1"
-  }
+  },
+  "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
 }
