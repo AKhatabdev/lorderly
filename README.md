@@ -6,7 +6,7 @@ and more!.
 
 Look how easy it is to use:
 
-
+![alt text](https://github.com/AKhatabdev/gifs/blob/main/Lorderly/Lorderlu_add_move_card.gif "Lorderly-Card")
 
 Features
 --------
