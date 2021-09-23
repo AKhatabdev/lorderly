@@ -34,7 +34,6 @@ $ npm run start
 
 Contribute
 ----------
-The project is private, but if anyone wanted to contribute please contact me (awaissaifali@hotmail.co.uk)
 
 - Issue Tracker: https://github.com/AKhatabdev/lorderly/issues
 - Source Code: https://github.com/AKhatabdev/lorderly
