@@ -51,7 +51,4 @@ The project is licensed under the mit license.
 
 * Author @Awais Khatab
 * Project: Lorderly
-*
-* Browsers: Chrome (Desktop & Mobile), Safari (Desktop & Mobile), Mozilla.
-*
 * Copyright 2021, Awais Khatab, All rights reserved.
