@@ -5,7 +5,6 @@ Lorderly is a browser web app built using React, it provides users with a space 
 and more!.
 
 Live version
---------
 https://lorderly.netlify.app/
 
 Look how easy it is to use:
