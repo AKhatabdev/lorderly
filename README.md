@@ -30,6 +30,13 @@ Compatibility
 
 - Mobile support limited, full support in a future update.
 
+Built with
+--------
+
+- React
+- Redux
+- Firebase
+
 RUN
 ------------
 
