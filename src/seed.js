@@ -53,7 +53,7 @@ export default function seed(store) {
     }
   });
 
-  console.log("Insert second list");
+  console.log("Insert Third list");
   const thirdListId = shortid.generate();
 
   store.dispatch({
