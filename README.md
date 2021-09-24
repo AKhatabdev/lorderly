@@ -43,7 +43,7 @@ Built with
 - Redux
 - Firebase
 
-RUN
+Run
 ------------
 
 Install Lorderly by running:
