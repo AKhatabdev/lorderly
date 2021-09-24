@@ -8,6 +8,11 @@ Look how easy it is to use:
 
 ![alt text](https://github.com/AKhatabdev/gifs/blob/main/Lorderly/Lorderlu_add_move_card.gif "Lorderly-Card")
 
+![alt text](https://github.com/AKhatabdev/gifs/blob/main/Lorderly/Lorderlu_edit and delete.gif "Lorderly-Edit")
+
+![alt text](https://github.com/AKhatabdev/gifs/blob/main/Lorderly/Lorderlu_add_move_list.gif "Lorderly-List")
+
+
 Features
 --------
 
