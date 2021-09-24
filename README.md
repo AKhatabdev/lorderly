@@ -4,8 +4,11 @@ Lorderly
 Lorderly is a browser web app built using React, it provides users with a space to create lists and manage tasks, issues
 and more!.
 
-Live version
+Live version:
 https://lorderly.netlify.app/
+
+Short Video Demo:
+https://www.youtube.com/watch?v=tDV2X6ewex8
 
 Look how easy it is to use:
 
