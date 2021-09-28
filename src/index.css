@@ -1,6 +1,6 @@
 html {
     -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
-    overflow-y: scroll !important;
+    overflow-y: scroll;
 }
 
 html::-webkit-scrollbar {
