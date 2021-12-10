@@ -68,10 +68,10 @@ class Card extends Component {
                                     </div>
                                 </div>
                             )}
-
                             {card.text}
                         </div>
                     )}
+
                 </Draggable>
             );
         } else {

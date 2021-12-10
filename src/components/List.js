@@ -68,6 +68,7 @@ class List extends Component {
         return (
             <Draggable draggableId={list._id} index={index}>
                 {(provided) => (
+
                     <div
                         ref={provided.innerRef}
                         {...provided.draggableProps}

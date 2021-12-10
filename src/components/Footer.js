@@ -17,13 +17,13 @@ export default function Footer() {
                 <ListGroupItem className="bg-transparent align-content-center">
                     <NavbarBrand className="m-0 bg-transparent justify-content-evenly" style={{width: 'auto'}}>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
-                                    url="https://www.instagram.com/interdimensional_pancake.eng/"/>
+                                    url="https://www.instagram.com/interdimensional_pancake.eng/" target="_blank"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
-                                    url="https://asak10.brighton.domains/website/"/>
+                                    url="https://asak10.brighton.domains/website/" target="_blank"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
-                                    url="https://github.com/AKhatabdev"/>
+                                    url="https://github.com/AKhatabdev" target="_blank"/>
                         <SocialIcon className="m-3" fgColor={"white"} bgColor={"black"}
-                                    url="https://www.linkedin.com/in/awais-khatab-3aa18616b/"/>
+                                    url="https://www.linkedin.com/in/awais-khatab-3aa18616b/" target="_blank"/>
                     </NavbarBrand>
                 </ListGroupItem>
             </ListGroup>
