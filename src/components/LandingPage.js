@@ -47,10 +47,8 @@ export function LandingPage() {
                             <Form>
                                 <Row>
                                     <Col>
-                                        <Fade right>
-                                            <Button id="trialButton" onClick={handleEmailSubmit} className="fw-bolder"
-                                                    type="submit" variant="outline-light">START YOUR FREE TRIAL</Button>
-                                        </Fade>
+                                    <Button id="trialButton" onClick={handleEmailSubmit} className="fw-bolder"
+                                    type="submit" variant="outline-light">START YOUR FREE TRIAL</Button>
                                     </Col>
                                     </Row>
                                 </Form>
