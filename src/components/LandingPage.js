@@ -25,18 +25,18 @@ export function LandingPage() {
                 <CardGroup className="m-5">
                     <Card style={{height: '300px', width: '400px'}} bg="transparent" variant="dark">
                         <Card.Body>
-                            <Fade left delay={500}>
+                            <Fade left delay={300}>
                                 <h1 className="text-white">Keep track of your tasks.</h1>{' '}
                             </Fade>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
-                            <Fade bottom delay={1500}>
+                            <Fade bottom delay={1200}>
                                 <h4 className="text-white fw-normal">
                                     Manage projects, and reach new productivity peaks.
                                 </h4>
                                 <div>&nbsp;</div>
                             </Fade>
-                            <Fade bottom delay={2500}>
+                            <Fade bottom delay={2300}>
                                 <h4 className="text-white fw-normal">
                                     Start with a Lorderly board, lists, and cards. Organise tasks.
                                     Customize and expand with more features as your teamwork grows.
@@ -47,7 +47,7 @@ export function LandingPage() {
                             <Form>
                                 <Row>
                                     <Col>
-                                        <Fade right delay={3500}>
+                                        <Fade right delay={2500}>
                                             <Button id="trialButton" onClick={handleEmailSubmit} className="fw-bolder"
                                                     type="submit" variant="outline-light">START YOUR FREE TRIAL</Button>
                                         </Fade>
