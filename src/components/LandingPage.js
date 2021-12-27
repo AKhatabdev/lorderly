@@ -47,7 +47,7 @@ export function LandingPage() {
                             <Form>
                                 <Row>
                                     <Col>
-                                        <Fade right delay={2500}>
+                                        <Fade right>
                                             <Button id="trialButton" onClick={handleEmailSubmit} className="fw-bolder"
                                                     type="submit" variant="outline-light">START YOUR FREE TRIAL</Button>
                                         </Fade>
