@@ -2,7 +2,7 @@ import firebase from "firebase/compat";
 import "firebase/auth";
 
 const app = firebase.initializeApp({
-    apiKey: 'AIzaSyCUJ3uIzvzRndzd4xFgjOO7Jxg8ynf6tDY',
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: 'lorderly-auth-dev.firebaseapp.com',
     dataBaseURL: 'https://lorderly-auth-dev-default-rtdb.europe-west1.firebasedatabase.app',
     projectId: 'lorderly-auth-dev',
