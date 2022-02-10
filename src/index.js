@@ -16,9 +16,11 @@ import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 
 const rootElement = document.getElementById("root");
+console.log(process.env.REACT_APP_FIREBASE_API_KEY);
+
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <App/>
     </Provider>,
     rootElement
 );
