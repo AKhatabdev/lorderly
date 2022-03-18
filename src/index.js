@@ -1,12 +1,3 @@
-/*
-* Author @Awais Khatab
-* Project: Lorderly
-*
-* Browsers: Chrome (Desktop), Safari (Desktop), Mozilla.
-*
-* Copyright 2021, Awais Khatab, All rights reserved.
-* */
-
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
